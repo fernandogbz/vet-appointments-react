@@ -1,4 +1,4 @@
-const Patients = () => {
+const PatientsList = () => {
   return (
     <>
     <h2>Patients List</h2>
@@ -6,4 +6,4 @@ const Patients = () => {
     )
 }
 
-export default Patients
+export default PatientsList
