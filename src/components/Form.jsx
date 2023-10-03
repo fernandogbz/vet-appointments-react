@@ -10,9 +10,9 @@ const Form = () => {
 
       <form className="bg-white shadow-md rounded-lg py-10 px-5">
         <div>
-          <label className="block text-gray-700 uppercase font-bold">Pet Name</label>
+          <label htmlFor="pet" className="block text-gray-700 uppercase font-bold">Pet Name</label>
 
-          <input type="text" placeholder="Enter name" className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+          <input id="pet" type="text" placeholder="Enter name" className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
         </div>
       </form>
     </div>
