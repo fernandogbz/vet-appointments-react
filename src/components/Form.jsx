@@ -58,6 +58,17 @@ const Form = () => {
           className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
         </div>
 
+        <div className="mb-5">
+          <label
+          htmlFor="symptoms"
+          className="block text-gray-700 uppercase font-bold">Symptoms</label>
+          
+          <textarea
+          id="symptoms"
+          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+          placeholder="Describe the symptoms"/>
+        </div>
+
       </form>
     </div>
   )
