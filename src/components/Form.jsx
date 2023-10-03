@@ -7,6 +7,13 @@ const Form = () => {
         Add Patients and {''}
         <span className="text-indigo-600 font-bold">Manage them</span>
       </p>
+
+      <form>
+        <div>
+          <label>Pet Name</label>
+          <input type="text" placeholder="Enter name"/>
+        </div>
+      </form>
     </div>
   )
 }
