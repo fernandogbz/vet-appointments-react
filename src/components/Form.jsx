@@ -8,7 +8,7 @@ const Form = () => {
         <span className="text-indigo-600 font-bold">Manage them</span>
       </p>
 
-      <form>
+      <form className="bg-white shadow-md rounded-lg py-10 px-5">
         <div>
           <label>Pet Name</label>
           <input type="text" placeholder="Enter name"/>
