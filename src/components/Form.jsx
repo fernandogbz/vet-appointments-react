@@ -10,7 +10,7 @@ const Form = () => {
 
       <form className="bg-white shadow-md rounded-lg py-10 px-5">
         <div>
-          <label className="block">Pet Name</label>
+          <label className="block text-gray-700 uppercase font-bold">Pet Name</label>
           <input type="text" placeholder="Enter name"/>
         </div>
       </form>
