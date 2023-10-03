@@ -9,7 +9,7 @@ const Form = () => {
         <span className="text-indigo-600 font-bold">Manage them</span>
       </p>
 
-      <form className="bg-white shadow-md rounded-lg py-10 px-5">
+      <form className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
 
         <div className="mb-5">
           <label 
@@ -69,6 +69,10 @@ const Form = () => {
           placeholder="Describe the symptoms"/>
         </div>
 
+        <input
+        type="submit"
+        className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors rounded-md"
+        value="Add Patient"/>
       </form>
     </div>
   )
