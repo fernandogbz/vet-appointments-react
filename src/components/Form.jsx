@@ -23,6 +23,18 @@ const Form = () => {
           className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
         </div>
 
+        <div className="mb-5">
+          <label
+          htmlFor="owner"
+          className="block text-gray-700 uppercase font-bold">Owner Name</label>
+
+          <input
+          id="owner"
+          type="text"
+          placeholder="Enter owner name"
+          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+        </div>
+
       </form>
     </div>
   )
