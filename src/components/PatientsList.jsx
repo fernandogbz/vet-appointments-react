@@ -8,6 +8,13 @@ const PatientsList = () => {
       Manage your {''}
       <span className="text-indigo-600 font-bold">Patients and Appointments</span>
     </p>
+
+    <div>
+      <p>Name: {''}
+        <span>Hook</span>
+        </p>
+    </div>
+
     </div>
     )
 }
