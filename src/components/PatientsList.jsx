@@ -9,7 +9,7 @@ const PatientsList = () => {
       <span className="text-indigo-600 font-bold">Patients and Appointments</span>
     </p>
 
-    <div>
+    <div className="m-3 bg-white shadow-md px-5 py-10 rounded-xl">
       <p>Name: {''}
         <span>Hook</span>
         </p>
