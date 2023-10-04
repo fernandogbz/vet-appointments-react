@@ -1,3 +1,6 @@
+import Patient from "./Patient"
+
+
 const PatientsList = () => {
   return (
     <div className="mid:w-1/2 lg:w-3/5">
@@ -9,6 +12,11 @@ const PatientsList = () => {
       <span className="text-indigo-600 font-bold">Patients and Appointments</span>
     </p>
 
+    <Patient />
+    <Patient />
+    <Patient />
+    <Patient />
+    <Patient />
     </div>
     )
 }
