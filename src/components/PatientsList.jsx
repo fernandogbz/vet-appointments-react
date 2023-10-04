@@ -3,7 +3,7 @@ import Patient from "./Patient"
 
 const PatientsList = () => {
   return (
-    <div className="mid:w-1/2 lg:w-3/5">
+    <div className="mid:w-1/2 lg:w-3/5 h-screen overflow-y-scroll">
 
     <h2 className="font-black text-3xl text-center">Patients List</h2>
 
