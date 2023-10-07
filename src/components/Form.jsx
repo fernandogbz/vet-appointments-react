@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 
 const Form = () => {
+  const [name, setName] = useState('');
 
   return (
     <div className="md:w-1/2 lg:w-2/5">
@@ -23,7 +24,8 @@ const Form = () => {
           id="pet"
           type="text"
           placeholder="Enter pet name"
-          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+          value={name}/>
         </div>
 
         <div className="mb-5">
