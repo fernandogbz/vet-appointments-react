@@ -25,7 +25,9 @@ const Form = () => {
           type="text"
           placeholder="Enter pet name"
           className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
-          value={name}/>
+          value={name}
+          onChange={() => console.log('Writing...')}
+          />
         </div>
 
         <div className="mb-5">
