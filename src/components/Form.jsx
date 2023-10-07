@@ -26,7 +26,7 @@ const Form = () => {
           placeholder="Enter pet name"
           className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
           value={name}
-          onChange={() => console.log('Writing...')}
+          onChange={(e) => setName(e.target.value)}
           />
         </div>
 
