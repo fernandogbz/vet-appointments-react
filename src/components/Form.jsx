@@ -51,7 +51,10 @@ const Form = () => {
           id="owner"
           type="text"
           placeholder="Enter owner name"
-          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+          value={owner}
+          onChange={(e) => setOwner(e.target.value)}
+          />
         </div>
 
         <div className="mb-5">
