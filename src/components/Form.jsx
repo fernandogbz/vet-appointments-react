@@ -3,6 +3,12 @@ import {useState, useEffect} from 'react';
 const Form = () => {
   const [name, setName] = useState('');
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log('Enviando Formulario')
+  }
+  
   return (
     <div className="md:w-1/2 lg:w-2/5">
 
