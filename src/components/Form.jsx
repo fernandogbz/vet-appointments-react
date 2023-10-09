@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 const Form = () => {
   const [name, setName] = useState('');
   const [owner, setOwner] = useState('');
+  const [email, setEmail] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
