@@ -80,7 +80,9 @@ const Form = () => {
           <input
           id="discharged"
           type="date"
-          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}/>
         </div>
 
         <div className="mb-5">
