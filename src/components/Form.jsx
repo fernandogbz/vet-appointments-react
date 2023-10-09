@@ -5,6 +5,7 @@ const Form = () => {
   const [owner, setOwner] = useState('');
   const [email, setEmail] = useState('');
   const [date, setDate] = useState('');
+  const [symptoms, setSymptoms] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
