@@ -13,7 +13,9 @@ const Form = () => {
         <span className="text-indigo-600 font-bold">Manage them</span>
       </p>
 
-      <form className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
+      <form 
+      onSubmit={handleSubmit}
+      className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
 
         <div className="mb-5">
           <label 
