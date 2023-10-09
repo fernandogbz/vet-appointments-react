@@ -66,7 +66,10 @@ const Form = () => {
           id="email"
           type="email"
           placeholder="Email"
-          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+          className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
 
         <div className="mb-5">
