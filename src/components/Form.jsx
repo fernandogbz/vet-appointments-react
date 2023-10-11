@@ -10,7 +10,12 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log('Enviando Formulario')
+    // Validating Form
+    if([name, owner, email, date, symptoms].includes('')) {
+      console.log('There is at least one field empty')
+    } else {
+      console.log('All fields full')
+    }
   }
   
   return (
