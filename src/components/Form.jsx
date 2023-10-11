@@ -7,12 +7,15 @@ const Form = () => {
   const [date, setDate] = useState('');
   const [symptoms, setSymptoms] = useState('');
 
+  const [error, setError] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Validating Form
     if([name, owner, email, date, symptoms].includes('')) {
       console.log('There is at least one field empty')
+      setError(true)
     } else {
       console.log('All fields full')
     }
