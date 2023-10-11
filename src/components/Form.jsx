@@ -16,9 +16,9 @@ const Form = () => {
     if([name, owner, email, date, symptoms].includes('')) {
       console.log('There is at least one field empty')
       setError(true)
-    } else {
-      console.log('All fields full')
+      return;
     }
+    setError(false)
   }
   
   return (
