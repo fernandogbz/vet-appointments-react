@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const Form = () => {
+const Form = ( {setPatients} ) => {
   const [name, setName] = useState('');
   const [owner, setOwner] = useState('');
   const [email, setEmail] = useState('');
@@ -19,6 +19,8 @@ const Form = () => {
       return;
     }
     setError(false)
+
+    setPatients(name)
   }
   
   return (
