@@ -20,7 +20,18 @@ const Form = ( {setPatients} ) => {
     }
     setError(false)
 
-    setPatients(name)
+    // Patient Object
+    const patientObject = {
+      name,
+      owner,
+      email,
+      date,
+      symptoms
+    }
+
+    console.log(patientObject)
+
+    // setPatients(name)
   }
   
   return (
