@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const Form = ( {setPatients} ) => {
+const Form = ( {patients, setPatients} ) => {
   const [name, setName] = useState('');
   const [owner, setOwner] = useState('');
   const [email, setEmail] = useState('');
@@ -29,9 +29,9 @@ const Form = ( {setPatients} ) => {
       symptoms
     }
 
-    console.log(patientObject)
+    // console.log(patientObject)
 
-    // setPatients(name)
+    setPatients([...patients, patientObject])
   }
   
   return (
