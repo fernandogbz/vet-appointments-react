@@ -32,6 +32,13 @@ const Form = ( {patients, setPatients} ) => {
     // console.log(patientObject)
 
     setPatients([...patients, patientObject])
+
+    // Reset form
+    setName('')
+    setOwner('')
+    setEmail('')
+    setDate('')
+    setSymptoms('')
   }
   
   return (
