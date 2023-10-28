@@ -55,11 +55,7 @@ const Form = ( {patients, setPatients} ) => {
       onSubmit={handleSubmit}
       className="bg-white shadow-md rounded-lg py-10 px-5 mb-10">
 
-        { error && 
-          <div className='bg-red-600 text-white text-center p-3 uppercase font-bold mb-3 rounded-md'>
-            <p>All fields are required</p>
-          </div>
-        }
+        { error && }
 
         <div className="mb-5">
           <label 
