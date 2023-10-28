@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import Error from './Error';
 
 const Form = ( {patients, setPatients} ) => {
   const [name, setName] = useState('');
