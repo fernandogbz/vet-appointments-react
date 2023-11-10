@@ -14,14 +14,14 @@ const PatientsList = ({patients}) => {
         <span className="text-indigo-600 font-bold">Patients and Appointments</span>
       </p>
 
-      { patients.map( () => (
-      
-        <h1>Desde map</h1>
+      { patients.map( patient => (
+        <Patient 
+          patient={patient}
+          />
         )
       ) 
     }
     
-      <Patient />
     </div>
     )
 }
