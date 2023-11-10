@@ -1,6 +1,6 @@
 const Patient = ({patient}) => {
 
-  const {name} = patient
+  const {name, owner, email, date, symptoms} = patient
 
   console.log(patient)
   return (
@@ -9,16 +9,16 @@ const Patient = ({patient}) => {
         <span className="font-normal normal-case">{name}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">Owner Name: {''}
-        <span className="font-normal normal-case">Fer</span>
+        <span className="font-normal normal-case">{owner}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">Email {''}
-        <span className="font-normal normal-case">email@email.com</span>
+        <span className="font-normal normal-case">{email}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">Discharged on: {''}
-        <span className="font-normal normal-case">October 4th, 2023</span>
+        <span className="font-normal normal-case">{date}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">Symptoms: {''}
-        <span className="font-normal normal-case">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus culpa molestias animi eius vel suscipit placeat optio. Magni excepturi non quisquam nulla!</span>
+        <span className="font-normal normal-case">{symptoms}</span>
       </p>
     </div>
   )
