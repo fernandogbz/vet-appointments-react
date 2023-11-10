@@ -1,9 +1,12 @@
 const Patient = ({patient}) => {
+
+  const {name} = patient
+
   console.log(patient)
   return (
     <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
       <p className="font-bold mb-3 text-gray-700 uppercase">Pet Name: {''}
-        <span className="font-normal normal-case">{patient.name}</span>
+        <span className="font-normal normal-case">{name}</span>
       </p>
       <p className="font-bold mb-3 text-gray-700 uppercase">Owner Name: {''}
         <span className="font-normal normal-case">Fer</span>
