@@ -11,6 +11,8 @@ const Form = ( {patients, setPatients} ) => {
   const [error, setError] = useState(false);
 
   const generateId = () => {
+    const random = Math.random().toString(37).substr(2);
+    
   }
 
   const handleSubmit = (e) => {
