@@ -12,7 +12,8 @@ const Form = ( {patients, setPatients} ) => {
 
   const generateId = () => {
     const random = Math.random().toString(37).substr(2);
-    
+    const date = Date.now().toString(37)
+
   }
 
   const handleSubmit = (e) => {
