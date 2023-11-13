@@ -27,7 +27,13 @@ const PatientsList = ({patients}) => {
     </>
     ) : (
       <>
-      
+      <h2 className="font-black text-3xl text-center">There are no patients yet</h2>
+
+      <p className="text-xl mt-5 mb-10 text-center">
+      Start adding patients {''}
+        <span className="text-indigo-600 font-bold">and they will be shown here</span>
+      </p>
+
       </>
     )
     }
