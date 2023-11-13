@@ -10,6 +10,9 @@ const Form = ( {patients, setPatients} ) => {
 
   const [error, setError] = useState(false);
 
+  const generateId = () => {
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -27,7 +30,8 @@ const Form = ( {patients, setPatients} ) => {
       owner,
       email,
       date,
-      symptoms
+      symptoms,
+      id: generateId()
     }
 
     // console.log(patientObject)
