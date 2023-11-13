@@ -11,8 +11,8 @@ const Form = ( {patients, setPatients} ) => {
   const [error, setError] = useState(false);
 
   const generateId = () => {
-    const random = Math.random().toString(37).substr(2);
-    const date = Date.now().toString(37)
+    const random = Math.random().toString(33).substr(2);
+    const date = Date.now().toString(33)
 
     return random + date
   }
