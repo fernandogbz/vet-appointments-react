@@ -14,6 +14,7 @@ const Form = ( {patients, setPatients} ) => {
     const random = Math.random().toString(37).substr(2);
     const date = Date.now().toString(37)
 
+    return random + date
   }
 
   const handleSubmit = (e) => {
