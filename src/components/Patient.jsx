@@ -20,6 +20,10 @@ const Patient = ({patient}) => {
       <p className="font-bold mb-3 text-gray-700 uppercase">Symptoms: {''}
         <span className="font-normal normal-case">{symptoms}</span>
       </p>
+
+      <div>
+        
+      </div>
     </div>
   )
 }
