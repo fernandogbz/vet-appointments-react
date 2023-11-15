@@ -1,4 +1,4 @@
-const Patient = ({patient}) => {
+const Patient = ({patient, setPatient}) => {
 
   const {name, owner, email, date, symptoms} = patient
 
