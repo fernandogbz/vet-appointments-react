@@ -1,7 +1,7 @@
 import Patient from "./Patient"
 
 
-const PatientsList = ({patients}) => {
+const PatientsList = ({patients, setPatient}) => {
   console.log(patients)
 
   return (
