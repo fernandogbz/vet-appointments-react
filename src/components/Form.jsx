@@ -11,7 +11,13 @@ const Form = ( {patients, setPatients, patient} ) => {
   const [error, setError] = useState(false);
 
   useEffect(() =>{
-    console.log(Object.keys(patient))
+    if(Object.keys(patient).length > 0) {
+      setName(patient.name)
+      setOwner(patient.owner)
+      setEmail(patient.email)
+      setDate(patient.date)
+      setSymptoms(patient.symptoms)
+    }
   }, [patient])
   
   const generateId = () => {
