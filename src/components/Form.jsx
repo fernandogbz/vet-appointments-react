@@ -11,7 +11,7 @@ const Form = ( {patients, setPatients, patient} ) => {
   const [error, setError] = useState(false);
 
   useEffect(() =>{
-    console.log(patient)
+    console.log(Object.keys(patient))
   }, [patient])
   
   const generateId = () => {
@@ -26,7 +26,6 @@ const Form = ( {patients, setPatients, patient} ) => {
 
     // Validating Form
     if([name, owner, email, date, symptoms].includes('')) {
-      console.log('There is at least one field empty')
       setError(true)
       return;
     }
