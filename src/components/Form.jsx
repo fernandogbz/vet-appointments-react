@@ -1,15 +1,19 @@
 import {useState, useEffect} from 'react';
 import Error from './Error';
 
+  // Form is reading patients, setPatients and patient from App.jsx
 const Form = ( {patients, setPatients, patient} ) => {
+  // These first variables are empty at first, but can change with the alternate variables next to them when the state changes
   const [name, setName] = useState('');
   const [owner, setOwner] = useState('');
   const [email, setEmail] = useState('');
   const [date, setDate] = useState('');
   const [symptoms, setSymptoms] = useState('');
 
+  //Setting error as false
   const [error, setError] = useState(false);
 
+  // Object.keys method is used to detect if the object is empty and if not, set(Name, Owner, Email, Date & Symptoms) variables are used to show the information back in the form when the user clicks on Edit button, allowing the user to make any changes to the patient
   useEffect(() =>{
     if(Object.keys(patient).length > 0) {
       setName(patient.name)
@@ -21,10 +25,11 @@ const Form = ( {patients, setPatients, patient} ) => {
   }, [patient])
   
   const generateId = () => {
-    const random = Math.random().toString(33).substr(2);
-    const date = Date.now().toString(33)
+    const random = Math.random().toString(33).substr(2); // Generate a random number, turn it to a string with a number between 2 and 36, and substract the first 2 digits('0' & '.')
+    
+    const date = Date.now().toString(33) // Same as above but instead of random numbers, the date
 
-    return random + date
+    return random + date // Merge both 'ids' to generate an even stronger id and assign a completely different one to each patient
   }
 
   const handleSubmit = (e) => {
