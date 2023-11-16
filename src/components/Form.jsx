@@ -10,6 +10,10 @@ const Form = ( {patients, setPatients, patient} ) => {
 
   const [error, setError] = useState(false);
 
+  useEffect(() =>{
+    console.log(patient)
+  }, [patient])
+  
   const generateId = () => {
     const random = Math.random().toString(33).substr(2);
     const date = Date.now().toString(33)
@@ -37,8 +41,6 @@ const Form = ( {patients, setPatients, patient} ) => {
       symptoms,
       id: generateId()
     }
-
-    // console.log(patientObject)
 
     setPatients([...patients, patientObject])
 
