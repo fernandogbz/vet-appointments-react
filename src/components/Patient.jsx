@@ -3,7 +3,11 @@ const Patient = ({patient, setPatient, deletePatient}) => {
   const {name, owner, email, date, symptoms, id} = patient // Destructuring patient object
 
   const handleDelete = () => {
-    console.log('Deleting', id)
+    const response = confirm("Are you sure you want to delete this patient? This action can't be undone");
+
+    if(response) {
+      deletePatient(id);
+    }
   }
 
   return (
