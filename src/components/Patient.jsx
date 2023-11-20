@@ -2,6 +2,10 @@ const Patient = ({patient, setPatient, deletePatient}) => {
 
   const {name, owner, email, date, symptoms, id} = patient // Destructuring patient object
 
+  const handleDelete = () => {
+    console.log('Deleting', id)
+  }
+
   return (
     <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
       <p className="font-bold mb-3 text-gray-700 uppercase">Pet Name: {''}
