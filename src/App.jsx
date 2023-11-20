@@ -8,6 +8,10 @@ function App() {
   const [patients, setPatients] = useState([]);
   const [patient, setPatient] = useState({});
 
+  const deletePatient = () => {
+    console.log('Deleting patient', id);
+  }
+
   return (
     <div className="container mx-auto mt-20">
       <Header />
