@@ -31,7 +31,7 @@ const Patient = ({patient, setPatient, deletePatient}) => {
         <button
           type="button"
           className="py-2 px-10 bg-red-600 hover:bg-red-700 text-white font-bold uppercase rounded-lg"
-          onClick={() => deletePatient(id)}
+          onClick={handleDelete}
 
           >Delete</button>
       </div>
