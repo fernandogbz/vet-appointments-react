@@ -8,7 +8,7 @@ function App() {
   const [patients, setPatients] = useState([]);
   const [patient, setPatient] = useState({});
 
-  const deletePatient = () => {
+  const deletePatient = (id) => {
     console.log('Deleting patient', id);
   }
 
