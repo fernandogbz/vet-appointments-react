@@ -48,11 +48,19 @@ const Form = ( {patients, setPatients, patient} ) => {
       owner,
       email,
       date,
-      symptoms,
-      id: generateId()
+      symptoms
     }
 
-    setPatients([...patients, patientObject])
+    if(patient.id) {
+      // Editing Patient
+
+
+    } else {
+      // New Patient
+      patientObject.id = generateId();
+      setPatients([...patients, patientObject]);
+    }
+
 
     // Reset form
     setName('')
