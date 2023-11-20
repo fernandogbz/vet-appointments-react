@@ -26,6 +26,7 @@ function App() {
         <PatientsList 
           patients={patients}
           setPatient={setPatient}
+          deletePatient={deletePatient}
         />
       </div>
 
