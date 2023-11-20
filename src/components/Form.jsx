@@ -54,8 +54,6 @@ const Form = ( {patients, setPatients, patient, setPatient} ) => {
     if(patient.id) {
       // Editing Patient
       patientObject.id = patient.id
-      console.log(patientObject)
-      console.log(patient)
 
       // Iterating in patients array to catch the repeated ones(when editing), keep them in the same object and update the changes made to the patient
       const patientsUpdated = patients.map( patientState => patientState.id === patient.id ? patientObject : patientState)
