@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import Error from './Error';
 
   // Form is reading patients, setPatients and patient from App.jsx
-const Form = ( {patients, setPatients, patient} ) => {
+const Form = ( {patients, setPatients, patient, setPatient} ) => {
   // These first variables are empty at first, but can change with the alternate variables next to them when the state changes
   const [name, setName] = useState('');
   const [owner, setOwner] = useState('');
