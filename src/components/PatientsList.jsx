@@ -20,6 +20,7 @@ const PatientsList = ({patients, setPatient, deletePatient}) => {
           key={patient.id}
           patient={patient}
           setPatient={setPatient}
+          deletePatient={deletePatient}
           />
         )
       ) 
