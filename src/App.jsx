@@ -8,8 +8,9 @@ function App() {
   const [patients, setPatients] = useState([]);
   const [patient, setPatient] = useState({});
 
-  const deletePatient = (id) => {
+  const deletePatient = id => {
     const patientsUpdated = patients.filter( patient => patient.id !== id);
+    setPatients(patientsUpdated)
 
     console.log(patientsUpdated);
   }
