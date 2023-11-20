@@ -61,6 +61,7 @@ const Form = ( {patients, setPatients, patient, setPatient} ) => {
       const patientsUpdated = patients.map( patientState => patientState.id === patient.id ? patientObject : patientState)
 
       setPatients(patientsUpdated)
+      setPatient({}) // Clear state in setPatient object after the changes are made
 
     } else {
       // New Patient
