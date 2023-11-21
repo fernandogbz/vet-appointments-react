@@ -9,6 +9,11 @@ function App() {
   const [patient, setPatient] = useState({});
 
   useEffect(() => {
+
+  }, []) // No dependencies(empty array) means it will only be executed once when the component is ready
+
+  // Save the patients in localStorage, turning patients array into string and synchronize state
+  useEffect(() => {
     localStorage.setItem('patients', JSON.stringify(patients));
   },[patients])
 
