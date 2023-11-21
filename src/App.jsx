@@ -8,6 +8,10 @@ function App() {
   const [patients, setPatients] = useState([]);
   const [patient, setPatient] = useState({});
 
+  useEffect(() => {
+    console.log('component ready or patients changed')
+  },[patients])
+
   const deletePatient = id => {
     const patientsUpdated = patients.filter( patient => patient.id !== id);
     setPatients(patientsUpdated)
