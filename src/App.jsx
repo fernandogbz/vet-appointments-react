@@ -9,7 +9,7 @@ function App() {
   const [patient, setPatient] = useState({});
 
   useEffect(() => {
-    console.log('component ready or patients changed')
+    localStorage.setItem('patients', JSON.stringify(patients));
   },[patients])
 
   const deletePatient = id => {
