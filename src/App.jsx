@@ -9,7 +9,13 @@ function App() {
   const [patient, setPatient] = useState({});
 
   useEffect(() => {
+    const getLocalStorage = () => {
+      const patientsLocalStorage = JSON.parse(localStorage.getItem('patients')) ?? []; // Getting patients array from localStorage, turning it into an array, and if there isn't anything in localStorage then add an empty array
 
+      console.log(patientsLocalStorage)
+    }
+
+    getLocalStorage();
   }, []) // No dependencies(empty array) means it will only be executed once when the component is ready
 
   // Save the patients in localStorage, turning patients array into string and synchronize state
