@@ -11,7 +11,8 @@ function App() {
   useEffect(() => {
     const getLocalStorage = () => {
       const patientsLocalStorage = JSON.parse(localStorage.getItem('patients')) ?? []; // Getting patients array from localStorage, turning it into an array, and if there isn't anything in localStorage then add an empty array
-
+      
+      console.log(patientsLocalStorage)
       setPatients(patientsLocalStorage) //patientsLocalStorage added to state
     }
 
