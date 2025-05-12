@@ -1,0 +1,53 @@
+{
+  "header": {
+    "title": "Veterinary Patients",
+    "vet": "Administrator",
+    "slogan": "trusted care for your pet's unique needs",
+    "compromise": "We're committed to delivering unique vet care with a broad range of affordable, personalized solutions."
+  },
+  "form": {
+    "title": "Book an appointment",
+    "subtitle": "Add patients and",
+    "manage": "Manage them",
+    "petName": "Pet name",
+    "petNamePlaceholder": "Enter pet name",
+    "ownerName": "Owner name",
+    "ownerNamePlaceholder": "Enter owner name",
+    "email": "Email",
+    "emailPlaceholder": "Enter email",
+    "admissionDate": "Admission date",
+    "dischargeDate": "Discharge date",
+    "symptoms": "Symptoms",
+    "symptomsPlaceholder": "Describe the symptoms",
+    "addPatient": "Add Patient",
+    "editPatient": "Edit Patient",
+    "cancel": "Cancel",
+    "clearForm": "Clear",
+    "error": "All fields are required"
+  },
+  "patientsList": {
+    "title": "Patients List",
+    "subtitle": "Manage your ",
+    "subtitleSpan": "Patients and Appointments",
+    "noPatients": "No patients yet",
+    "addPatient": "Add patients ",
+    "addPatientSpan": "and they will be shown here",
+    "edit": "Edit",
+    "delete": "Delete",
+    "dischargeDate": "Discharge Date",
+    "owner": "Owner",
+    "email": "Email",
+    "symptoms": "Symptoms"
+  },
+  "patient": {
+    "petName": "Pet Name",
+    "owner": "Owner",
+    "email": "Email",
+    "admissionDate": "Admission Date",
+    "dischargeDate": "Discharge Date",
+    "symptoms": "Symptoms",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Are you sure you want to delete this patient? This action can't be undone"
+  }
+}
