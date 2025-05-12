@@ -39,6 +39,14 @@
     "email": "Email",
     "symptoms": "Síntomas"
   },
+  "patientsTable": {
+    "title": "Tabla de Pacientes",
+    "subtitle": "Administra tus ",
+    "subtitleSpan": "Pacientes y Citas",
+    "noPatients": "No hay pacientes aún",
+    "addPatient": "Agrega pacientes ",
+    "addPatientSpan": "y aparecerán aquí"
+  },
   "patient": {
     "petName": "Nombre de la Mascota",
     "owner": "Propietario",
@@ -48,6 +56,7 @@
     "symptoms": "Síntomas",
     "edit": "Editar",
     "delete": "Eliminar",
-    "confirm": "¿Estás seguro de querer eliminar este paciente? Esta acción no se puede deshacer"
+    "confirm": "¿Estás seguro de querer eliminar este paciente? Esta acción no se puede deshacer",
+    "actions": "Acciones"
   }
 }

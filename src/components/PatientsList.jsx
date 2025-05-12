@@ -5,7 +5,7 @@ const PatientsList = ({ patients, setPatient, deletePatient }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll ">
+    <div className="w-full md:h-screen overflow-y-scroll ">
       {patients && patients.length ? (
         <>
           <h2 className="font-black text-3xl text-center">

@@ -7,7 +7,7 @@ const Patient = ({ patient, setPatient, deletePatient }) => {
     patient; // Destructuring patient object
 
   const handleDelete = () => {
-    const response = confirm(t("patient.deleteConfirmation"));
+    const response = confirm(t("patient.confirm"));
 
     if (response) {
       deletePatient(id);

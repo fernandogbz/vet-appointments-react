@@ -4,11 +4,15 @@ import "./i18n";
 import Header from "./components/Header";
 import Form from "./components/Form";
 import PatientsList from "./components/PatientsList";
+import PatientsTable from "./components/PatientsTable";
+import { Toggle } from "./components/ui/toggle";
+import { LayoutGrid, List } from "lucide-react";
 
 function App() {
   const { i18n } = useTranslation();
   const [patients, setPatients] = useState([]);
   const [patient, setPatient] = useState({});
+  const [isGridView, setIsGridView] = useState(false);
 
   useEffect(() => {
     const getLocalStorage = () => {
@@ -55,18 +59,42 @@ function App() {
       </div>
       <Header />
 
-      <div className="mt-12 md:flex">
+      <div className="mt-12 md:flex items-start">
         <Form
           patients={patients}
           setPatients={setPatients}
           patient={patient}
           setPatient={setPatient}
         />
-        <PatientsList
-          patients={patients}
-          setPatient={setPatient}
-          deletePatient={deletePatient}
-        />
+        <div className="flex-1">
+          <div className="absolute right-20 mb-4 pr-4">
+            <Toggle
+              pressed={isGridView}
+              onPressedChange={setIsGridView}
+              aria-label="Toggle view"
+              className="data-[state=on]:bg-indigo-600 data-[state=on]:text-white"
+            >
+              {isGridView ? (
+                <LayoutGrid className="h-6 w-6" />
+              ) : (
+                <List className="h-6 w-6" />
+              )}
+            </Toggle>
+          </div>
+          {isGridView ? (
+            <PatientsTable
+              patients={patients}
+              setPatient={setPatient}
+              deletePatient={deletePatient}
+            />
+          ) : (
+            <PatientsList
+              patients={patients}
+              setPatient={setPatient}
+              deletePatient={deletePatient}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
