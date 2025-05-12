@@ -12,7 +12,7 @@ import {
 const PatientsTable = ({ patients, setPatient, deletePatient }) => {
   const { t } = useTranslation();
 
-  const handleDelete = () => {
+  const handleDelete = (id) => {
     const response = confirm(t("patient.confirm"));
 
     if (response) {
@@ -77,7 +77,7 @@ const PatientsTable = ({ patients, setPatient, deletePatient }) => {
                       {t("patient.edit")}
                     </button>
                     <button
-                      onClick={handleDelete}
+                      onClick={() => handleDelete(patient.id)}
                       className="text-red-600 hover:text-red-800"
                     >
                       {t("patient.delete")}
