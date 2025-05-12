@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { handleDelete } from "../lib/utils";
+import { handleDelete, formatDate } from "../lib/utils";
 
 const Patient = ({ patient, setPatient, deletePatient }) => {
   const { t } = useTranslation();
@@ -26,12 +26,16 @@ const Patient = ({ patient, setPatient, deletePatient }) => {
 
       <p className="font-bold mb-3 text-gray-700 uppercase">
         {t("patient.admissionDate")}: {""}
-        <span className="font-normal normal-case">{dateAdmission}</span>
+        <span className="font-normal normal-case">
+          {formatDate(dateAdmission)}
+        </span>
       </p>
 
       <p className="font-bold mb-3 text-gray-700 uppercase">
         {t("patient.dischargeDate")}: {""}
-        <span className="font-normal normal-case">{dateDischarge}</span>
+        <span className="font-normal normal-case">
+          {formatDate(dateDischarge)}
+        </span>
       </p>
 
       <p className="font-bold mb-3 text-gray-700 uppercase">

@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { handleDelete } from "../lib/utils";
+import { handleDelete, formatDate } from "../lib/utils";
 
 const PatientsTable = ({ patients, setPatient, deletePatient }) => {
   const { t } = useTranslation();
@@ -58,8 +58,8 @@ const PatientsTable = ({ patients, setPatient, deletePatient }) => {
                 <TableCell>{patient.name}</TableCell>
                 <TableCell>{patient.owner}</TableCell>
                 <TableCell>{patient.email}</TableCell>
-                <TableCell>{patient.dateAdmission}</TableCell>
-                <TableCell>{patient.dateDischarge}</TableCell>
+                <TableCell>{formatDate(patient.dateAdmission)}</TableCell>
+                <TableCell>{formatDate(patient.dateDischarge)}</TableCell>
                 <TableCell>{patient.symptoms}</TableCell>
                 <TableCell className="text-right">
                   <div className="flex justify-end gap-2">

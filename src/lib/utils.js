@@ -12,3 +12,13 @@ export const handleDelete = (t, deletePatient, id) => {
     deletePatient(id);
   }
 };
+
+export const formatDate = (date) => {
+  const newDate = new Date(date);
+  const options = {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  };
+  return newDate.toLocaleDateString("es-ES", options);
+};
