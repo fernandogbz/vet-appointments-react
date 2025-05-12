@@ -8,17 +8,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { handleDelete } from "../lib/utils";
 
 const PatientsTable = ({ patients, setPatient, deletePatient }) => {
   const { t } = useTranslation();
-
-  const handleDelete = (id) => {
-    const response = confirm(t("patient.confirm"));
-
-    if (response) {
-      deletePatient(id);
-    }
-  };
 
   return (
     <div className="px-4">
@@ -77,7 +70,7 @@ const PatientsTable = ({ patients, setPatient, deletePatient }) => {
                       {t("patient.edit")}
                     </button>
                     <button
-                      onClick={() => handleDelete(patient.id)}
+                      onClick={() => handleDelete(t, deletePatient, patient.id)}
                       className="text-red-600 hover:text-red-800"
                     >
                       {t("patient.delete")}
