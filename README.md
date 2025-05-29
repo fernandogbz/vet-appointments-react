@@ -1,6 +1,6 @@
 # Citas Veterinarias
 
-Enlace: https://glittery-wisp-1c9de4.netlify.app
+Link: https://glittery-wisp-1c9de4.netlify.app
 
 # 🏥 Sistema de Gestión de Citas Veterinarias
 
@@ -9,8 +9,11 @@ Esta es una aplicación web moderna para gestionar citas veterinarias. Cuenta co
 ## ⚙ Características
 
 ✅ **Programación de Citas** – Interfaz fácil de usar para agendar citas veterinarias
+<br>
 ✅ **Diseño Responsivo** – Diseño completamente adaptable que funciona en todos los dispositivos
+<br>
 ✅ **UI Moderna** – Interfaz limpia y profesional construida con TailwindCSS
+<br>
 ✅ **Componentes Interactivos** – Componentes React dinámicos para una experiencia fluida
 
 ## 🚀 Tecnologías Utilizadas
