@@ -28,24 +28,24 @@ Esta es una aplicación web moderna para gestionar citas veterinarias. Cuenta co
 
 /vet-appointments-react
 <br/>
-│** src/ # Archivos fuente
+│__ src/ # Archivos fuente
 <br/>
-│** public/ # Archivos estáticos
+│__ public/ # Archivos estáticos
 <br/>
-│** index.html # Archivo HTML principal
+│__ index.html # Archivo HTML principal
 <br/>
-│** package.json # Dependencias del proyecto
+│__ package.json # Dependencias del proyecto
 <br/>
-│** tailwind.config.js # Configuración de Tailwind
+│__ tailwind.config.js # Configuración de Tailwind
 <br/>
-│** vite.config.js # Configuración de Vite
+│__ vite.config.js # Configuración de Vite
 
 ## 📦 Instalación y Uso
 
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/yourusername/vet-appointments-react.git
+   git clone https://github.com/fernandogbz/vet-appointments-react.git
    ```
 
 2. Instala las dependencias:
