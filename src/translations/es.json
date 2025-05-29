@@ -1,0 +1,62 @@
+{
+  "header": {
+    "title": "Administrador de Pacientes",
+    "vet": "Veterinarios",
+    "slogan": "atencion confiable para las necesidades únicas de sus mascotas",
+    "compromise": "Nos comprometemos a brindar atención veterinaria inigualable con una amplia gama de soluciones asequibles y personalizadas."
+  },
+  "form": {
+    "title": "Reserva una cita",
+    "subtitle": "Añade pacientes y",
+    "manage": "Adminístralos",
+    "petName": "Nombre de la mascota",
+    "petNamePlaceholder": "Ingrese el nombre de la mascota",
+    "ownerName": "Nombre del propietario",
+    "ownerNamePlaceholder": "Ingrese el nombre del propietario",
+    "email": "Email",
+    "emailPlaceholder": "Ingrese Email",
+    "admissionDate": "Fecha de admisión",
+    "dischargeDate": "Fecha de alta",
+    "symptoms": "Síntomas",
+    "symptomsPlaceholder": "Describe los síntomas",
+    "addPatient": "Agregar Paciente",
+    "editPatient": "Editar Paciente",
+    "cancel": "Cancelar",
+    "clearForm": "Limpiar",
+    "error": "Todos los campos son obligatorios"
+  },
+  "patientsList": {
+    "title": "Listado de Pacientes",
+    "subtitle": "Administra tus ",
+    "subtitleSpan": "Pacientes y Citas",
+    "noPatients": "No hay pacientes aún",
+    "addPatient": "Agrega pacientes ",
+    "addPatientSpan": "y aparecerán aquí",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "dischargeDate": "Fecha de Alta",
+    "owner": "Propietario",
+    "email": "Email",
+    "symptoms": "Síntomas"
+  },
+  "patientsTable": {
+    "title": "Tabla de Pacientes",
+    "subtitle": "Administra tus ",
+    "subtitleSpan": "Pacientes y Citas",
+    "noPatients": "No hay pacientes aún",
+    "addPatient": "Agrega pacientes ",
+    "addPatientSpan": "y aparecerán aquí"
+  },
+  "patient": {
+    "petName": "Nombre de la Mascota",
+    "owner": "Propietario",
+    "email": "Email",
+    "admissionDate": "Fecha de Admisión",
+    "dischargeDate": "Fecha de Alta",
+    "symptoms": "Síntomas",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "confirm": "¿Estás seguro de querer eliminar este paciente? Esta acción no se puede deshacer",
+    "actions": "Acciones"
+  }
+}

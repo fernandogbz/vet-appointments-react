@@ -1,6 +1,7 @@
 # Vet Appointments
 
 Link: https://glittery-wisp-1c9de4.netlify.app
+<<<<<<< HEAD
 
 # 🏥 Veterinary Appointments Management System
 
@@ -68,3 +69,5 @@ This is a modern web application for managing veterinary appointments. It featur
 - Build for production: `npm run build`
 - Preview production build: `npm run preview`
 - Lint code: `npm run lint`
+=======
+>>>>>>> 06944c5d91e0a76e8d4a1adc7e09b2d966e0e3c0
