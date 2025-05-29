@@ -1,20 +1,19 @@
-# Vet Appointments
+# Agenda Citas Veterinarias
 
-Link: https://glittery-wisp-1c9de4.netlify.app
-<<<<<<< HEAD
+Enlace: https://glittery-wisp-1c9de4.netlify.app
 
-# 🏥 Veterinary Appointments Management System
+# �� Sistema de Gestión de Citas Veterinarias
 
-This is a modern web application for managing veterinary appointments. It features a clean, responsive design and an intuitive user interface for scheduling and managing pet appointments.
+Esta es una aplicación web moderna para gestionar citas veterinarias. Cuenta con un diseño limpio, responsivo y una interfaz intuitiva para programar y gestionar citas de mascotas.
 
-## ⚙ Features
+## ⚙ Características
 
-✅ **Appointment Scheduling** – Easy-to-use interface for booking veterinary appointments
-✅ **Responsive Design** – Fully responsive layout that works on all devices
-✅ **Modern UI** – Clean and professional interface built with TailwindCSS
-✅ **Interactive Components** – Dynamic React components for smooth user experience
+✅ **Programación de Citas** – Interfaz fácil de usar para agendar citas veterinarias
+✅ **Diseño Responsivo** – Diseño completamente adaptable que funciona en todos los dispositivos
+✅ **UI Moderna** – Interfaz limpia y profesional construida con TailwindCSS
+✅ **Componentes Interactivos** – Componentes React dinámicos para una experiencia fluida
 
-## 🚀 Technologies Used
+## 🚀 Tecnologías Utilizadas
 
 - HTML
 - TailwindCSS
@@ -22,52 +21,43 @@ This is a modern web application for managing veterinary appointments. It featur
 - React
 - Vite
 
-## 📂 Project Structure
+## 📂 Estructura del Proyecto
 
 /vet-appointments-react
 <br/>
-│** src/ # Source files
+│** src/ # Archivos fuente
 <br/>
-│** public/ # Static assets
+│** public/ # Archivos estáticos
 <br/>
-│** index.html # Main HTML file
+│** index.html # Archivo HTML principal
 <br/>
-│** package.json # Project dependencies
+│** package.json # Dependencias del proyecto
 <br/>
-│** tailwind.config.js # Tailwind configuration
+│** tailwind.config.js # Configuración de Tailwind
 <br/>
-│** vite.config.js # Vite configuration
+│** vite.config.js # Configuración de Vite
 
-## 📦 Installation and Usage
+## 📦 Instalación y Uso
 
-1. Clone the repository:
+1. Clona el repositorio:
 
    ```bash
    git clone https://github.com/yourusername/vet-appointments-react.git
    ```
 
-2. Install dependencies:
+2. Instala las dependencias:
 
    ```bash
    npm install
    ```
 
-3. Start the development server:
+3. Inicia el servidor de desarrollo:
 
    ```bash
    npm run dev
    ```
 
-4. Build for production:
+4. Construye para producción:
    ```bash
    npm run build
    ```
-
-## 🛠 Development
-
-- Run development server: `npm run dev`
-- Build for production: `npm run build`
-- Preview production build: `npm run preview`
-- Lint code: `npm run lint`
-=======
->>>>>>> 06944c5d91e0a76e8d4a1adc7e09b2d966e0e3c0
