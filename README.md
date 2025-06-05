@@ -65,4 +65,3 @@ Esta es una aplicación web moderna para gestionar citas veterinarias. Cuenta co
    npm run build
    ```
 
-
