@@ -1,6 +1,4 @@
-# vet-appointments-react
-
-Link: https://glittery-wisp-1c9de4.netlify.app
+Link: [Demo](https://glittery-wisp-1c9de4.netlify.app)
 
 # 🏥 Sistema de Gestión de Citas Veterinarias
 
